@@ -129,6 +129,54 @@ tp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/build
 .PHONY : tp/fast
 
+src/Graph/Algo.o: src/Graph/Algo.cpp.o
+.PHONY : src/Graph/Algo.o
+
+# target to build an object file
+src/Graph/Algo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/src/Graph/Algo.cpp.o
+.PHONY : src/Graph/Algo.cpp.o
+
+src/Graph/Algo.i: src/Graph/Algo.cpp.i
+.PHONY : src/Graph/Algo.i
+
+# target to preprocess a source file
+src/Graph/Algo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/src/Graph/Algo.cpp.i
+.PHONY : src/Graph/Algo.cpp.i
+
+src/Graph/Algo.s: src/Graph/Algo.cpp.s
+.PHONY : src/Graph/Algo.s
+
+# target to generate assembly for a file
+src/Graph/Algo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/src/Graph/Algo.cpp.s
+.PHONY : src/Graph/Algo.cpp.s
+
+src/Graph/Utils.o: src/Graph/Utils.cpp.o
+.PHONY : src/Graph/Utils.o
+
+# target to build an object file
+src/Graph/Utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/src/Graph/Utils.cpp.o
+.PHONY : src/Graph/Utils.cpp.o
+
+src/Graph/Utils.i: src/Graph/Utils.cpp.i
+.PHONY : src/Graph/Utils.i
+
+# target to preprocess a source file
+src/Graph/Utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/src/Graph/Utils.cpp.i
+.PHONY : src/Graph/Utils.cpp.i
+
+src/Graph/Utils.s: src/Graph/Utils.cpp.s
+.PHONY : src/Graph/Utils.s
+
+# target to generate assembly for a file
+src/Graph/Utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/src/Graph/Utils.cpp.s
+.PHONY : src/Graph/Utils.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tp"
+	@echo "... src/Graph/Algo.o"
+	@echo "... src/Graph/Algo.i"
+	@echo "... src/Graph/Algo.s"
+	@echo "... src/Graph/Utils.o"
+	@echo "... src/Graph/Utils.i"
+	@echo "... src/Graph/Utils.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
