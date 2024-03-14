@@ -26,5 +26,7 @@ int main() {
     GraphAlgo::ComputeRelatedComponents(n, m, edges, comp);
     GraphUtils::DisplayComponentsMatrix(n, comp);
 
+    GraphAlgo::DisplayComponentsSizes(n, m, comp);
+
     return 0;
 }
