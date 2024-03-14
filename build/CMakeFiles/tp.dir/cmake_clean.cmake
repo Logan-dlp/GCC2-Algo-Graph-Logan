@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/tp.dir/src/Graph/Algo.cpp.o"
+  "CMakeFiles/tp.dir/src/Graph/Algo.cpp.o.d"
+  "CMakeFiles/tp.dir/src/Graph/Utils.cpp.o"
+  "CMakeFiles/tp.dir/src/Graph/Utils.cpp.o.d"
   "CMakeFiles/tp.dir/src/main.cpp.o"
   "CMakeFiles/tp.dir/src/main.cpp.o.d"
   "tp"

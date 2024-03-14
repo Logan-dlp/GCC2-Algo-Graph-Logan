@@ -1,7 +1,11 @@
 #include <iostream>
 #include <cstdlib>
 
-void GenerateRandomGraph(int n, int m, int edges[][2]);
+#include "../include/Graph/Utils.hpp"
+#include "../include/Graph/Algo.hpp"
+
+namespace GraphUtils = graph::utils;
+namespace GraphAlgo = graph::algo;
 
 int main() {
     std::cout << "Practical exercices: connected components" << std::endl;
@@ -16,14 +20,11 @@ int main() {
     int edges[m][2];
     int comp[n];
 
+    GraphUtils::GenerateRandomGraph(n, m, edges);
+    GraphUtils::DisplayEdgeMatrix(m, edges);
+
+    GraphAlgo::ComputeRelatedComponents(n, m, edges, comp);
+    GraphUtils::DisplayComponentsMatrix(n, comp);
+
     return 0;
-}
-
-void GenerateRandomGraph(int n, int m, int edges[][2]) {
-    for (int i = 0; i < m; ++i) {
-        std::srand(time(nullptr));
-
-        edges[i][0] = std::rand() % n;
-        edges[i][1] = std::rand() % n;
-    }
 }
