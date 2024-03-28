@@ -6,6 +6,8 @@ namespace graph::utils {
     void DisplayEdgeMatrix(int m, int edges[][2]);
 
     void DisplayComponentsMatrix(int n, int comp[]);
+
+    void DisplayComponentsSizes(int n, int m, int comp[]);
 }
 
 #endif //_UTILS_HPP

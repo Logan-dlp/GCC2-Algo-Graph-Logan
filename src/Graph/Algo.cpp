@@ -1,5 +1,9 @@
 #include "../../include/Graph/Algo.hpp"
 
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
 namespace graph::algo {
     // V = n = sommet
     // E = m = arete
@@ -10,7 +14,7 @@ namespace graph::algo {
         for (int i = 0; i < m; ++i) {
             if (comp[edges[i][0]] != comp[edges[i][1]]) {
                 int aux = comp[edges[i][0]];
-                for (int j = 0; j < m; ++j) {
+                for (int j = 0; j < n; ++j) {
                     if (comp[j] == aux) {
                         comp[j] = comp[edges[i][1]];
                     }
