@@ -3,6 +3,8 @@
 
 namespace graph::algo {
     void ComputeRelatedComponents(int n, int m, int edges[][2], int comp[]);
+
+    void ComputeRelatedComponentsOptimized(int n, int m, int edges[][2], int comp[]);
 }
 
 #endif //_ALGO_HPP
