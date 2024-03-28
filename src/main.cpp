@@ -28,5 +28,20 @@ int main() {
 
     GraphUtils::DisplayComponentsSizes(n, m, comp);
 
+    // Kruskal
+    std::cout << "Entrer le nombre de sommets pour kruskal: ";
+    std::cin >> n;
+
+    m = n * (n-1) / 2;
+    GraphAlgo::Point2D points[n];
+    int edgesForKruskal[m][3];
+    int tree[n-1][2];
+
+    GraphAlgo::CreateRandomPoints(n, points);
+    GraphAlgo::ComputeEdges(n, m, points, edgesForKruskal);
+    GraphAlgo::Kruskal(n, m, edgesForKruskal, tree);
+
+    GraphUtils::ExportTreeInPSFormat(n, points, tree, "Kruskal.ps");
+
     return 0;
 }
