@@ -3,7 +3,6 @@
 
 namespace graph::algo {
     void ComputeRelatedComponents(int n, int m, int edges[][2], int comp[]);
-    void DisplayComponentsSizes(int n, int m, int comp[]);
 }
 
 #endif //_ALGO_HPP
